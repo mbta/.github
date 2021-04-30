@@ -1,0 +1,8 @@
+{
+  "name": "Report Elixir coverage",
+  "description": "Posts a comment with code coverage updates to pull requests (depends on Elixir CI)",
+  "iconName": "elixir",
+  "categories": [
+    "Elixir"
+  ]
+}
