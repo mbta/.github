@@ -1,0 +1,8 @@
+{
+  "name": "Deploy to Elastic Beanstalk",
+  "description": "Deploy an application to AWS Elastic Beanstalk",
+  "iconName": "aws",
+  "categories": [
+    "Dockerfile"
+  ]
+}
