@@ -11,6 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     environment: dev
     concurrency: dev
+    env:
+      ECS_CLUSTER: __cluster_name__
+      ECS_SERVICE: __service_name__
 
     steps:
       - uses: actions/checkout@v2
@@ -24,8 +27,8 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          ecs-cluster: ___ECS_CLUSTER___
-          ecs-service: ___ECS_SERVICE___
+          ecs-cluster: ${{ env.ECS_CLUSTER }}
+          ecs-service: ${{ env.ECS_SERVICE }}
           docker-tag: ${{ steps.build-push.outputs.docker-tag }}
       - uses: mbta/actions/notify-slack-deploy@v1
         if: ${{ !cancelled() }}
