@@ -3,7 +3,7 @@ name: Deploy to Elastic Beanstalk
 on:
   workflow_dispatch:
   push:
-    branches: [$default_branch]
+    branches: [$default-branch]
 
 jobs:
   deploy:
