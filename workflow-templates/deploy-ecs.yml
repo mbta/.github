@@ -12,6 +12,7 @@ jobs:
     environment: dev
     concurrency: dev
     env:
+      DOCKER_BUILDKIT: 1
       ECS_CLUSTER: __cluster_name__
       ECS_SERVICE: __service_name__
 
