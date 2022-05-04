@@ -1,8 +1,8 @@
 {
-  "name": "Deploy to ECS",
-  "description": "Deploy an application to AWS Elastic Container Service (ECS)",
-  "iconName": "aws",
-  "categories": [
-    "Dockerfile"
-  ]
+    "name": "Deploy",
+    "description": "Deploy an application to AWS Elastic Container Service (ECS)",
+    "iconName": "aws",
+    "categories": [
+        "Dockerfile"
+    ]
 }
