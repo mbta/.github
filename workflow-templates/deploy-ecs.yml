@@ -12,7 +12,7 @@ on:
 
 jobs:
   call-workflow:
-    uses: mbta/actions/workflows/deploy.yml@main
+    uses: mbta/workflows/.github/workflows/deploy.yml@main
     with:
       app-name: __app_name__
       environment: ${{ github.event.inputs.environment || 'dev' }}
